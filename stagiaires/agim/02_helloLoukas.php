@@ -1,0 +1,1 @@
+<?php echo "il faut savoir que ..." ?>

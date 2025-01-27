@@ -78,3 +78,5 @@ foreach ($monTab as $value) {
 foreach ($monTab as $key => $value) {
     echo "$key  $value";
 }
+
+var_dump($monTab);

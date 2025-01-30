@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo 13</title>
+</head>
+<body>
+    <h1>
+        Exo 13
+    </h1>
+    <p>
+        Créez un fichier 13-eau.php <br>
+         affiche suivant une température allant de -100 à 200 °, <br>
+        l'état de l'eau (solide en dessous de 0 compris) <br>(liquide entre 1 et 99°) <br>
+          (gazeux à partir de 100°) : <br>
+          L'eau est solide à -7° - <br>
+          L'eau est liquide à 33 ° - <br>
+          L'eau est gazeuse à 105°
+    </p>  
+    <?php
+    $a = 0;
+    if($a <= 0) {
+        echo "L'état de l'eau est solide";
+    }elseif($a >=1 && $a <=99) {
+        echo "L'état de l'eau est gazeux";
+    }elseif ($a < -7) {
+        echo "L'eau est solide";
+    }elseif ($a == 33) {
+        echo "L'eau est liquide";
+    }elseif ($a >= 105) {
+        echo "L'est est gazeuse";
+    }
+    ?>
+</body>
+</html>

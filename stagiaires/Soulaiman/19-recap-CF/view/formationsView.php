@@ -18,7 +18,7 @@
 			<h1>Apropos de nous</h1>
 			<h3>Skilldeve pour l'apprentissage du développement</h3>
 			<p>J’ai formé, en mode présentiel et distanciel, des milliers d’étudiants en technologies informatiques. Je suis enseignant à l'université et je participe au développement de plusieurs projets informatiques. Je participe aussi à la formation des personnels d’entreprises. Ayant une longue expérience dans la formation en technologies numériques, j'ai animé de nombreux séminaires et journées de formation auprès des apprenants débutants et confirmés dans plusieurs pays.</p>
-			<a href="formations.html" class="btn">En savoir Plus</a>
+			<a href="?page=formation" class="btn">En savoir Plus</a>
 
 		</div>
 	</section>
@@ -80,7 +80,7 @@
 			<p>Proposez votre expertise et partagez vos compétences sur une plateforme reconnue par sa fiabilité.
 			Nous mettons à votre disposition tous les outils nécessaires pour prendre soin de vos apprenants</p>
 
-			<a href="formations.html"><button class="btn-formateur">Devenir Formateur</button></a>
+			<a href="?page=formation"><button class="btn-formateur">Devenir Formateur</button></a>
 
 		</div>
 

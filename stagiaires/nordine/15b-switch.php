@@ -2,24 +2,24 @@
 
 
 <?php
-$chiffre = rand(0, 10);
-switch ($chiffre) {
-    case 0:
-    case 1:
-    case 2:
-    case 3:
-        echo "{$chiffre} : Nul à chier, étudie la fois prochaine";
-        break;
-    case 4:
-    case 5:
-        echo "{$chiffre} : Tu peux mieux faire";
-        break;
-    case 6:
-    case 7:
-        echo "{$chiffre} : Bien cette fois çi";
-        break;
-    default:
-        echo "{$chiffre} : Très bien, continue tu es sur la bonne voix";
-        break;
-}
+// $chiffre = rand(0, 10);
+// switch ($chiffre) {
+//     case 0:
+//     case 1:
+//     case 2:
+//     case 3:
+//         echo "{$chiffre} : Nul à chier, étudie la fois prochaine";
+//         break;
+//     case 4:
+//     case 5:
+//         echo "{$chiffre} : Tu peux mieux faire";
+//         break;
+//     case 6:
+//     case 7:
+//         echo "{$chiffre} : Bien cette fois çi";
+//         break;
+//     default:
+//         echo "{$chiffre} : Très bien, continue tu es sur la bonne voix";
+//         break;
+// }
 ?>

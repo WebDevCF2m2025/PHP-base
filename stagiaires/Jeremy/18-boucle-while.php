@@ -5,17 +5,32 @@
 
 echo "<p>1) Calculez la somme des entiers de 1 à 10 avec la boucle while<br>";
 
-$somme = 0;
+$sum = 0;
+$i = 1;
+
+while ($i <= 10) {
+    $sum += $i; 
+    $i++;        
+}
+
+echo "La somme des entiers de 1 à 10 est : " . $sum;
 
 
-
-// ligne qui doit devenir fonctionnelle :
-echo "La somme des entiers de 1 à 10 est : $somme";
 
 echo "</p>";
 
 echo "<p>2) Affichez une table de multiplication (de 1 à 10 au hasard) en utilisant la boucle while<br>";
+$randomNumber = mt_rand(1, 10);
 
+$i = 1;
+
+echo "Table de multiplication de " . $randomNumber . ":<br>";
+
+while ($i <= 10) {
+    $result = $randomNumber * $i;
+    echo $randomNumber . " x " . $i . " = " . $result . "<br>";
+    $i++;  
+}
 
 echo "</p>";
 

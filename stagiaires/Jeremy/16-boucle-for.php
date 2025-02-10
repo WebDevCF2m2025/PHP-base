@@ -9,9 +9,9 @@
 
 echo "<p>1) Affichez les nombres de 10 à 1 avec une boucle for<br>";
 for(
-   $i=0;
-   $i<=10;
-    $i++
+   $i=10;
+   $i>=1;
+    $i--
 ){
     echo "$i";
 }
@@ -25,13 +25,8 @@ echo "</p>";
 echo "<p>2) Affichez les nombres pairs de 0 à 20 avec une boucle for<br> 
 Ne pas utiliser les { et } ne fonctionne que sur une ligne (qui finit au ;), le ||| n'est affiché qu'après la boucle for<br>";
 
-for(
-   $i=0;
-   $i<=20;
-    $i+=2
-){
-    echo "$i";
-}
+for($i=0;$i<=20;$i+=2) echo "$i";
+
 
 echo "</p>";
 
@@ -59,11 +54,11 @@ $somme = 0;
 
 for ($i = 1; $i <= 20; $i++) {
      
-   if ($i % 2 == 0) {
+   if ($i % 2 == 0) 
       echo "$i pair.";
-  } else {
+   else 
       echo "$i impair.";
-  } 
+  
    
     }
 
@@ -79,15 +74,20 @@ $somme = 0;
 
 for ($i = 1; $i <= 20; $i++) {
       $somme += $i;
-   if ($i % 2 == 0) {
-      echo "$somme pair.";
-  } else {
-      echo "$somme impair.";
-  } 
+  // if ($i % 2 == 0) {
+    //  echo "$somme pair.";
+ // } else {
+  //    echo "$somme impair.";
+ // } 
    
-    }
+   
 
+
+   echo $somme % 2 ===0? "la somme est pair : $somme | " : "la somme est impaire : $somme |" ;
+}
 echo "</p>";
+
+
 
 /*
  * 6) Utilisez deux boucles for imbriquées pour afficher une table de multiplication de 1 à 5.

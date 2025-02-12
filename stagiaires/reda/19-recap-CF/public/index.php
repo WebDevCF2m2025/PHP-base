@@ -18,7 +18,7 @@ if (isset($_GET['p'])) {
   } elseif ($_GET['p'] == 'programme') {
     include '../view/programme.php';
   }
+} else {
+  include "../view/homepageView.php";
 }
 // Appel d'une des vues (par défaut l'accueil)
-
-include "../view/homepageView.php";

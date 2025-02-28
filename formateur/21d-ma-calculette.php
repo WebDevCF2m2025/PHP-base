@@ -1,6 +1,6 @@
 <?php
 # formateur\21c-ma-calculette.php
-// envoie du formulaire
+// utilisation de notre fonction, fonctionne grâce au transtypage en cas de numérique (changement de type automatique par PHP), sauf si non valide (string seul)
 
 function calculSimple($nb1, $nb2, $operator = "+")
 {
@@ -21,16 +21,13 @@ if(isset($_POST['nombre1'],
          $_POST['nombre2'],
          $_POST['operation'])
          ){
-            $resultat = "Formulaire envoyé, doit posséder les variables de notre formulaire<br>";
-}
-// si on a envoyé du POST on peut le vérifier avec :
-if($_SERVER['REQUEST_METHOD'] === 'POST'){
-    $resultat .= "Formulaire vérifié par ".'$_SERVER[\'REQUEST_METHOD\'], peut être plus facilement un bot<br>';
+        $resultat = calculSimple(
+            $_POST['nombre1'],
+            $_POST['nombre2'],
+            $_POST['operation']
+        );
 }
 
-if(!empty($_POST)){
-    $resultat .= "Formulaire vérifié par ".'!empty($_POST), peut être plus facilement un bot<br>';
-}
 
 ?>
 <!doctype html>

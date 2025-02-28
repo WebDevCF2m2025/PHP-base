@@ -1,18 +1,16 @@
 <?php
 # formateur\21c-ma-calculette.php
-// envoie du formulaire
+// utilisation de notre fonction en switch, fonctionne grâce au transtypage en cas de numérique (changement de type automatique par PHP), sauf si non valide (string seul)
 
 function calculSimple($nb1, $nb2, $operator = "+")
 {
-    if($operator=="-"){
-        return $nb1 - $nb2;
-    }elseif($operator=="*"){
-        return $nb1 * $nb2;
-    }elseif($operator=="/"){
-        if($nb2==0) return "impossible de diviser par 0";
-        return $nb1 / $nb2;
-    }else{
-        return $nb1 + $nb2;
+    switch($operator){
+        // le return arrête la fonction au ; qui le suit
+        case "-": return $nb1-$nb2;
+        case "*": return $nb1*$nb2;
+        case "/": return ($nb2==0)? "Division par 0 impossible" : $nb1/$nb2;
+        case "+": return $nb1+$nb2;
+        default : return "Opérateur non accepté";
     }
 }
 
@@ -21,16 +19,13 @@ if(isset($_POST['nombre1'],
          $_POST['nombre2'],
          $_POST['operation'])
          ){
-            $resultat = "Formulaire envoyé, doit posséder les variables de notre formulaire<br>";
-}
-// si on a envoyé du POST on peut le vérifier avec :
-if($_SERVER['REQUEST_METHOD'] === 'POST'){
-    $resultat .= "Formulaire vérifié par ".'$_SERVER[\'REQUEST_METHOD\'], peut être plus facilement un bot<br>';
+        $resultat = calculSimple(
+            $_POST['nombre1'],
+            $_POST['nombre2'],
+            $_POST['operation']
+        );
 }
 
-if(!empty($_POST)){
-    $resultat .= "Formulaire vérifié par ".'!empty($_POST), peut être plus facilement un bot<br>';
-}
 
 ?>
 <!doctype html>

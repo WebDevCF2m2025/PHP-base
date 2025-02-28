@@ -32,7 +32,7 @@ function calculSimple(float $nb1, float $nb2, string $operator = "+"): float|str
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['nombre1'], $_POST['nombre2'], $_POST['operation'])) {
     $nombre1 = (float) $_POST['nombre1'];
     $nombre2 = (float) $_POST['nombre2'];
-    $operation = (string) $_POST['operation'];
+    $operation = $_POST['operation'];
     $resultat = "$nombre1 $operation $nombre2 = ";
     $resultat .= calculSimple($nombre1, $nombre2, $operation);
 }

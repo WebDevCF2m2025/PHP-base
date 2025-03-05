@@ -1624,7 +1624,7 @@ echo bonjour("John");
 ---
 
 ## Function à mettre en liste
-_$variablesSuperglobales_, _GET_, _echo_, _var_dump()_, _count()_, _if_, _else_, _elseif_, _isset()_, _empty()_, _print_r()_, _switch()_, _inclusions (include, include_once, require, require_once)_, for(), foreach(), while(), do{ }while(), _mt_rand()_, _date()_, str_replace(), gettype(), settype(), cast, unset(), is_*
+_$variablesSuperglobales_, _GET_, _echo_, _var_dump()_, _count()_, _if_, _else_, _elseif_, _isset()_, _empty()_, _print_r()_, _switch()_, _inclusions (include, include_once, require, require_once)_, _for()_, foreach(), while(), do{ }while(), _mt_rand()_, _date()_, str_replace(), gettype(), settype(), cast, unset(), is_*
 
 
 En cours de création : https://listphp8.cf2m.be/
